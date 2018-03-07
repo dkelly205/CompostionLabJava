@@ -98,4 +98,13 @@ public class ComputerTest {
         computer.inputData("details");
         assertEquals("typing details", computer.getDataStream());
     }
+
+    @Test
+    public void testDataIsOutputtedFromDataStreamToOutputDevice(){
+        Keyboard keyboard = new Keyboard("qwerty");
+        Computer computer = new Computer(8, 512, monitor, keyboard);
+        computer.inputData("details");
+        assertEquals("typing details is now on screen", computer.outputDataStream());
+
+    }
 }

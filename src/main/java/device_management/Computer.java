@@ -47,11 +47,15 @@ public class Computer {
         return this.inputDevice.sendData(data);
     }
 
-    public void setInputDevice(Keyboard inputDevice) {
+    public void setInputDevice(IInput inputDevice) {
         this.inputDevice = inputDevice;
     }
 
     public String getDataStream() {
         return dataStream;
+    }
+
+    public String outputDataStream() {
+        return outputData(dataStream);
     }
 }
