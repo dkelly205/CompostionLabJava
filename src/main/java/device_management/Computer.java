@@ -51,4 +51,8 @@ public class Computer {
     public void setInputDevice(Keyboard inputDevice) {
         this.inputDevice = inputDevice;
     }
+
+    public String getDataStream() {
+        return dataStream;
+    }
 }

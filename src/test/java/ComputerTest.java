@@ -85,4 +85,9 @@ public class ComputerTest {
         computer.setInputDevice(keyboard);
         assertEquals("typing details", computer.inputData("details"));
     }
+
+    @Test
+    public void testDataStreamIsInitiallyNull(){
+        assertEquals(null, computer.getDataStream());
+    }
 }
