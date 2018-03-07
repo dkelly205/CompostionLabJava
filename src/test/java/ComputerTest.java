@@ -90,4 +90,12 @@ public class ComputerTest {
     public void testDataStreamIsInitiallyNull(){
         assertEquals(null, computer.getDataStream());
     }
+
+    @Test
+    public void testInputIsSavedToDatastream(){
+        Keyboard keyboard = new Keyboard("qwerty");
+        Computer computer = new Computer(8, 512, monitor, keyboard);
+        computer.inputData("details");
+        assertEquals("typing details", computer.getDataStream());
+    }
 }
